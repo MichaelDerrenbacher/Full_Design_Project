@@ -1,0 +1,826 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Project_Parts:AN6884 U?
+U 1 1 6041F546
+P 4200 2050
+AR Path="/6041F546" Ref="U?"  Part="1" 
+AR Path="/604048C4/6041F546" Ref="U7"  Part="1" 
+F 0 "U7" H 4200 2565 50  0000 C CNN
+F 1 "AN6884" H 4200 2474 50  0000 C CNN
+F 2 "Package_SIP:SIP-9_22.3x3mm_P2.54mm" H 4250 1350 50  0001 C CNN
+F 3 "" H 4200 1900 50  0001 C CNN
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 1800 2    50   Input ~ 0
+V_DD
+$Comp
+L pspice:0 #GND?
+U 1 1 6041F556
+P 5400 2100
+AR Path="/6041F556" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6041F556" Ref="#GND011"  Part="1" 
+F 0 "#GND011" H 5400 2000 50  0001 C CNN
+F 1 "0" H 5400 2189 50  0000 C CNN
+F 2 "" H 5400 2100 50  0001 C CNN
+F 3 "~" H 5400 2100 50  0001 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2000 5400 2100
+Text GLabel 1900 1450 0    50   Input ~ 0
+filter_a_out
+$Comp
+L Device:R_US R?
+U 1 1 6041F56A
+P 3250 2200
+AR Path="/6041F56A" Ref="R?"  Part="1" 
+AR Path="/604048C4/6041F56A" Ref="R13"  Part="1" 
+F 0 "R13" H 3318 2246 50  0000 L CNN
+F 1 "100k" H 3318 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3290 2190 50  0001 C CNN
+F 3 "~" H 3250 2200 50  0001 C CNN
+	1    3250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2000 3250 2000
+Wire Wire Line
+	3250 2000 3250 2050
+$Comp
+L pspice:0 #GND?
+U 1 1 6041F572
+P 3250 2450
+AR Path="/6041F572" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6041F572" Ref="#GND012"  Part="1" 
+F 0 "#GND012" H 3250 2350 50  0001 C CNN
+F 1 "0" H 3250 2539 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "~" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2350 3250 2450
+Text GLabel 5700 2900 2    50   Input ~ 0
+V_DD
+$Comp
+L Device:LED D?
+U 1 1 6041F57A
+P 3900 2700
+AR Path="/6041F57A" Ref="D?"  Part="1" 
+AR Path="/604048C4/6041F57A" Ref="D1"  Part="1" 
+F 0 "D1" V 4000 2800 50  0000 R CNN
+F 1 "LED" V 3800 2850 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 2700 50  0001 C CNN
+F 3 "~" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6041F580
+P 4050 2700
+AR Path="/6041F580" Ref="D?"  Part="1" 
+AR Path="/604048C4/6041F580" Ref="D2"  Part="1" 
+F 0 "D2" V 4150 2800 50  0000 R CNN
+F 1 "LED" V 3950 2850 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4050 2700 50  0001 C CNN
+F 3 "~" H 4050 2700 50  0001 C CNN
+	1    4050 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6041F586
+P 4200 2700
+AR Path="/6041F586" Ref="D?"  Part="1" 
+AR Path="/604048C4/6041F586" Ref="D3"  Part="1" 
+F 0 "D3" V 4300 2800 50  0000 R CNN
+F 1 "LED" V 4100 2850 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4200 2700 50  0001 C CNN
+F 3 "~" H 4200 2700 50  0001 C CNN
+	1    4200 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6041F58C
+P 4350 2700
+AR Path="/6041F58C" Ref="D?"  Part="1" 
+AR Path="/604048C4/6041F58C" Ref="D4"  Part="1" 
+F 0 "D4" V 4450 2800 50  0000 R CNN
+F 1 "LED" V 4250 2850 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4350 2700 50  0001 C CNN
+F 3 "~" H 4350 2700 50  0001 C CNN
+	1    4350 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6041F592
+P 4500 2700
+AR Path="/6041F592" Ref="D?"  Part="1" 
+AR Path="/604048C4/6041F592" Ref="D5"  Part="1" 
+F 0 "D5" V 4600 2800 50  0000 R CNN
+F 1 "LED" V 4400 2850 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4500 2700 50  0001 C CNN
+F 3 "~" H 4500 2700 50  0001 C CNN
+	1    4500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6041F598
+P 2300 1450
+AR Path="/6041F598" Ref="C?"  Part="1" 
+AR Path="/604048C4/6041F598" Ref="C9"  Part="1" 
+F 0 "C9" V 2071 1450 50  0000 C CNN
+F 1 "4.7u" V 2162 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2300 1450 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 6041F59E
+P 2650 1800
+AR Path="/6041F59E" Ref="RV?"  Part="1" 
+AR Path="/604048C4/6041F59E" Ref="RV1"  Part="1" 
+F 0 "RV1" H 2582 1846 50  0000 R CNN
+F 1 "10k" H 2582 1755 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal" H 2650 1800 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/ALPS/RK09K1110A2S/?qs=6EGMNY9ZYDSreIgC3FBwtw%3D%3D" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1800 3600 1800
+Wire Wire Line
+	2650 1650 2650 1450
+Wire Wire Line
+	2650 1450 2400 1450
+Wire Wire Line
+	2200 1450 1900 1450
+$Comp
+L pspice:0 #GND?
+U 1 1 6041F5A8
+P 2650 2100
+AR Path="/6041F5A8" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6041F5A8" Ref="#GND01"  Part="1" 
+F 0 "#GND01" H 2650 2000 50  0001 C CNN
+F 1 "0" H 2650 2189 50  0000 C CNN
+F 2 "" H 2650 2100 50  0001 C CNN
+F 3 "~" H 2650 2100 50  0001 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1950 2650 2100
+Wire Wire Line
+	3900 2900 3900 2850
+Wire Wire Line
+	3900 2900 4050 2900
+Wire Wire Line
+	4050 2850 4050 2900
+Connection ~ 4050 2900
+Wire Wire Line
+	4050 2900 4200 2900
+Wire Wire Line
+	4200 2850 4200 2900
+Connection ~ 4200 2900
+Wire Wire Line
+	4200 2900 4350 2900
+Wire Wire Line
+	4350 2850 4350 2900
+Connection ~ 4350 2900
+Wire Wire Line
+	4350 2900 4500 2900
+Wire Wire Line
+	4500 2850 4500 2900
+Connection ~ 4500 2900
+Wire Wire Line
+	4500 2900 5700 2900
+Wire Wire Line
+	4500 2500 4500 2550
+Wire Wire Line
+	4350 2500 4350 2550
+Wire Wire Line
+	4200 2500 4200 2550
+Wire Wire Line
+	4050 2500 4050 2550
+Wire Wire Line
+	3900 2500 3900 2550
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6041F5C2
+P 3050 2000
+AR Path="/6041F5C2" Ref="TP?"  Part="1" 
+AR Path="/604048C4/6041F5C2" Ref="TP8"  Part="1" 
+F 0 "TP8" V 2850 2050 50  0000 C CNN
+F 1 "TestPoint" V 2950 2050 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3250 2000 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3050 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 2000 3250 2000
+Connection ~ 3250 2000
+$Comp
+L Project_Parts:AN6884 U?
+U 1 1 6042AF11
+P 4200 4000
+AR Path="/6042AF11" Ref="U?"  Part="1" 
+AR Path="/604048C4/6042AF11" Ref="U8"  Part="1" 
+F 0 "U8" H 4200 4515 50  0000 C CNN
+F 1 "AN6884" H 4200 4424 50  0000 C CNN
+F 2 "Package_SIP:SIP-9_22.3x3mm_P2.54mm" H 4250 3300 50  0001 C CNN
+F 3 "" H 4200 3850 50  0001 C CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 3750 2    50   Input ~ 0
+V_DD
+$Comp
+L pspice:0 #GND?
+U 1 1 6042AF21
+P 5400 4050
+AR Path="/6042AF21" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6042AF21" Ref="#GND017"  Part="1" 
+F 0 "#GND017" H 5400 3950 50  0001 C CNN
+F 1 "0" H 5400 4139 50  0000 C CNN
+F 2 "" H 5400 4050 50  0001 C CNN
+F 3 "~" H 5400 4050 50  0001 C CNN
+	1    5400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3950 5400 4050
+Text GLabel 1900 3400 0    50   Input ~ 0
+filter_a_out
+$Comp
+L Device:R_US R?
+U 1 1 6042AF35
+P 3250 4150
+AR Path="/6042AF35" Ref="R?"  Part="1" 
+AR Path="/604048C4/6042AF35" Ref="R14"  Part="1" 
+F 0 "R14" H 3318 4196 50  0000 L CNN
+F 1 "100k" H 3318 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3290 4140 50  0001 C CNN
+F 3 "~" H 3250 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3950 3250 3950
+Wire Wire Line
+	3250 3950 3250 4000
+$Comp
+L pspice:0 #GND?
+U 1 1 6042AF3D
+P 3250 4400
+AR Path="/6042AF3D" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6042AF3D" Ref="#GND018"  Part="1" 
+F 0 "#GND018" H 3250 4300 50  0001 C CNN
+F 1 "0" H 3250 4489 50  0000 C CNN
+F 2 "" H 3250 4400 50  0001 C CNN
+F 3 "~" H 3250 4400 50  0001 C CNN
+	1    3250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4300 3250 4400
+Text GLabel 5700 4850 2    50   Input ~ 0
+V_DD
+$Comp
+L Device:LED D?
+U 1 1 6042AF45
+P 3900 4650
+AR Path="/6042AF45" Ref="D?"  Part="1" 
+AR Path="/604048C4/6042AF45" Ref="D6"  Part="1" 
+F 0 "D6" V 4000 4750 50  0000 R CNN
+F 1 "LED" V 3800 4800 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 4650 50  0001 C CNN
+F 3 "~" H 3900 4650 50  0001 C CNN
+	1    3900 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6042AF4B
+P 4050 4650
+AR Path="/6042AF4B" Ref="D?"  Part="1" 
+AR Path="/604048C4/6042AF4B" Ref="D7"  Part="1" 
+F 0 "D7" V 4150 4750 50  0000 R CNN
+F 1 "LED" V 3950 4800 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4050 4650 50  0001 C CNN
+F 3 "~" H 4050 4650 50  0001 C CNN
+	1    4050 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6042AF51
+P 4200 4650
+AR Path="/6042AF51" Ref="D?"  Part="1" 
+AR Path="/604048C4/6042AF51" Ref="D8"  Part="1" 
+F 0 "D8" V 4300 4750 50  0000 R CNN
+F 1 "LED" V 4100 4800 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4200 4650 50  0001 C CNN
+F 3 "~" H 4200 4650 50  0001 C CNN
+	1    4200 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6042AF57
+P 4350 4650
+AR Path="/6042AF57" Ref="D?"  Part="1" 
+AR Path="/604048C4/6042AF57" Ref="D9"  Part="1" 
+F 0 "D9" V 4450 4750 50  0000 R CNN
+F 1 "LED" V 4250 4800 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4350 4650 50  0001 C CNN
+F 3 "~" H 4350 4650 50  0001 C CNN
+	1    4350 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6042AF5D
+P 4500 4650
+AR Path="/6042AF5D" Ref="D?"  Part="1" 
+AR Path="/604048C4/6042AF5D" Ref="D10"  Part="1" 
+F 0 "D10" V 4600 4750 50  0000 R CNN
+F 1 "LED" V 4400 4800 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4500 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6042AF63
+P 2300 3400
+AR Path="/6042AF63" Ref="C?"  Part="1" 
+AR Path="/604048C4/6042AF63" Ref="C10"  Part="1" 
+F 0 "C10" V 2071 3400 50  0000 C CNN
+F 1 "4.7u" V 2162 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2300 3400 50  0001 C CNN
+F 3 "~" H 2300 3400 50  0001 C CNN
+	1    2300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 6042AF69
+P 2650 3750
+AR Path="/6042AF69" Ref="RV?"  Part="1" 
+AR Path="/604048C4/6042AF69" Ref="RV2"  Part="1" 
+F 0 "RV2" H 2582 3796 50  0000 R CNN
+F 1 "10k" H 2582 3705 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal" H 2650 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/ALPS/RK09K1110A2S/?qs=6EGMNY9ZYDSreIgC3FBwtw%3D%3D" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3750 3600 3750
+Wire Wire Line
+	2650 3600 2650 3400
+Wire Wire Line
+	2650 3400 2400 3400
+Wire Wire Line
+	2200 3400 1900 3400
+$Comp
+L pspice:0 #GND?
+U 1 1 6042AF73
+P 2650 4050
+AR Path="/6042AF73" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6042AF73" Ref="#GND016"  Part="1" 
+F 0 "#GND016" H 2650 3950 50  0001 C CNN
+F 1 "0" H 2650 4139 50  0000 C CNN
+F 2 "" H 2650 4050 50  0001 C CNN
+F 3 "~" H 2650 4050 50  0001 C CNN
+	1    2650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3900 2650 4050
+Wire Wire Line
+	3900 4850 3900 4800
+Wire Wire Line
+	3900 4850 4050 4850
+Wire Wire Line
+	4050 4800 4050 4850
+Connection ~ 4050 4850
+Wire Wire Line
+	4050 4850 4200 4850
+Wire Wire Line
+	4200 4800 4200 4850
+Connection ~ 4200 4850
+Wire Wire Line
+	4200 4850 4350 4850
+Wire Wire Line
+	4350 4800 4350 4850
+Connection ~ 4350 4850
+Wire Wire Line
+	4350 4850 4500 4850
+Wire Wire Line
+	4500 4800 4500 4850
+Connection ~ 4500 4850
+Wire Wire Line
+	4500 4850 5700 4850
+Wire Wire Line
+	4500 4450 4500 4500
+Wire Wire Line
+	4350 4450 4350 4500
+Wire Wire Line
+	4200 4450 4200 4500
+Wire Wire Line
+	4050 4450 4050 4500
+Wire Wire Line
+	3900 4450 3900 4500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6042AF8D
+P 3050 3950
+AR Path="/6042AF8D" Ref="TP?"  Part="1" 
+AR Path="/604048C4/6042AF8D" Ref="TP9"  Part="1" 
+F 0 "TP9" V 2850 4000 50  0000 C CNN
+F 1 "TestPoint" V 2950 4000 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3250 3950 50  0001 C CNN
+F 3 "~" H 3250 3950 50  0001 C CNN
+	1    3050 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 3950 3250 3950
+Connection ~ 3250 3950
+$Comp
+L Project_Parts:AN6884 U?
+U 1 1 6044B12A
+P 4200 5950
+AR Path="/6044B12A" Ref="U?"  Part="1" 
+AR Path="/604048C4/6044B12A" Ref="U9"  Part="1" 
+F 0 "U9" H 4200 6465 50  0000 C CNN
+F 1 "AN6884" H 4200 6374 50  0000 C CNN
+F 2 "Package_SIP:SIP-9_22.3x3mm_P2.54mm" H 4250 5250 50  0001 C CNN
+F 3 "" H 4200 5800 50  0001 C CNN
+	1    4200 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 5700 2    50   Input ~ 0
+V_DD
+$Comp
+L pspice:0 #GND?
+U 1 1 6044B13A
+P 5400 6000
+AR Path="/6044B13A" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6044B13A" Ref="#GND020"  Part="1" 
+F 0 "#GND020" H 5400 5900 50  0001 C CNN
+F 1 "0" H 5400 6089 50  0000 C CNN
+F 2 "" H 5400 6000 50  0001 C CNN
+F 3 "~" H 5400 6000 50  0001 C CNN
+	1    5400 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5900 5400 6000
+Text GLabel 1900 5350 0    50   Input ~ 0
+filter_a_out
+$Comp
+L Device:R_US R?
+U 1 1 6044B14E
+P 3250 6100
+AR Path="/6044B14E" Ref="R?"  Part="1" 
+AR Path="/604048C4/6044B14E" Ref="R15"  Part="1" 
+F 0 "R15" H 3318 6146 50  0000 L CNN
+F 1 "100k" H 3318 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3290 6090 50  0001 C CNN
+F 3 "~" H 3250 6100 50  0001 C CNN
+	1    3250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5900 3250 5900
+Wire Wire Line
+	3250 5900 3250 5950
+$Comp
+L pspice:0 #GND?
+U 1 1 6044B156
+P 3250 6350
+AR Path="/6044B156" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6044B156" Ref="#GND021"  Part="1" 
+F 0 "#GND021" H 3250 6250 50  0001 C CNN
+F 1 "0" H 3250 6439 50  0000 C CNN
+F 2 "" H 3250 6350 50  0001 C CNN
+F 3 "~" H 3250 6350 50  0001 C CNN
+	1    3250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6250 3250 6350
+Text GLabel 5700 6800 2    50   Input ~ 0
+V_DD
+$Comp
+L Device:LED D?
+U 1 1 6044B15E
+P 3900 6600
+AR Path="/6044B15E" Ref="D?"  Part="1" 
+AR Path="/604048C4/6044B15E" Ref="D11"  Part="1" 
+F 0 "D11" V 4000 6700 50  0000 R CNN
+F 1 "LED" V 3800 6750 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3900 6600 50  0001 C CNN
+F 3 "~" H 3900 6600 50  0001 C CNN
+	1    3900 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6044B164
+P 4050 6600
+AR Path="/6044B164" Ref="D?"  Part="1" 
+AR Path="/604048C4/6044B164" Ref="D12"  Part="1" 
+F 0 "D12" V 4150 6700 50  0000 R CNN
+F 1 "LED" V 3950 6750 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4050 6600 50  0001 C CNN
+F 3 "~" H 4050 6600 50  0001 C CNN
+	1    4050 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6044B16A
+P 4200 6600
+AR Path="/6044B16A" Ref="D?"  Part="1" 
+AR Path="/604048C4/6044B16A" Ref="D13"  Part="1" 
+F 0 "D13" V 4300 6700 50  0000 R CNN
+F 1 "LED" V 4100 6750 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4200 6600 50  0001 C CNN
+F 3 "~" H 4200 6600 50  0001 C CNN
+	1    4200 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6044B170
+P 4350 6600
+AR Path="/6044B170" Ref="D?"  Part="1" 
+AR Path="/604048C4/6044B170" Ref="D14"  Part="1" 
+F 0 "D14" V 4450 6700 50  0000 R CNN
+F 1 "LED" V 4250 6750 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4350 6600 50  0001 C CNN
+F 3 "~" H 4350 6600 50  0001 C CNN
+	1    4350 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6044B176
+P 4500 6600
+AR Path="/6044B176" Ref="D?"  Part="1" 
+AR Path="/604048C4/6044B176" Ref="D15"  Part="1" 
+F 0 "D15" V 4600 6700 50  0000 R CNN
+F 1 "LED" V 4400 6750 50  0001 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 4500 6600 50  0001 C CNN
+F 3 "~" H 4500 6600 50  0001 C CNN
+	1    4500 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6044B17C
+P 2300 5350
+AR Path="/6044B17C" Ref="C?"  Part="1" 
+AR Path="/604048C4/6044B17C" Ref="C11"  Part="1" 
+F 0 "C11" V 2071 5350 50  0000 C CNN
+F 1 "4.7u" V 2162 5350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2300 5350 50  0001 C CNN
+F 3 "~" H 2300 5350 50  0001 C CNN
+	1    2300 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 6044B182
+P 2650 5700
+AR Path="/6044B182" Ref="RV?"  Part="1" 
+AR Path="/604048C4/6044B182" Ref="RV3"  Part="1" 
+F 0 "RV3" H 2582 5746 50  0000 R CNN
+F 1 "10k" H 2582 5655 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal" H 2650 5700 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/ALPS/RK09K1110A2S/?qs=6EGMNY9ZYDSreIgC3FBwtw%3D%3D" H 2650 5700 50  0001 C CNN
+	1    2650 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5700 3600 5700
+Wire Wire Line
+	2650 5550 2650 5350
+Wire Wire Line
+	2650 5350 2400 5350
+Wire Wire Line
+	2200 5350 1900 5350
+$Comp
+L pspice:0 #GND?
+U 1 1 6044B18C
+P 2650 6000
+AR Path="/6044B18C" Ref="#GND?"  Part="1" 
+AR Path="/604048C4/6044B18C" Ref="#GND019"  Part="1" 
+F 0 "#GND019" H 2650 5900 50  0001 C CNN
+F 1 "0" H 2650 6089 50  0000 C CNN
+F 2 "" H 2650 6000 50  0001 C CNN
+F 3 "~" H 2650 6000 50  0001 C CNN
+	1    2650 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5850 2650 6000
+Wire Wire Line
+	3900 6800 3900 6750
+Wire Wire Line
+	3900 6800 4050 6800
+Wire Wire Line
+	4050 6750 4050 6800
+Connection ~ 4050 6800
+Wire Wire Line
+	4050 6800 4200 6800
+Wire Wire Line
+	4200 6750 4200 6800
+Connection ~ 4200 6800
+Wire Wire Line
+	4200 6800 4350 6800
+Wire Wire Line
+	4350 6750 4350 6800
+Connection ~ 4350 6800
+Wire Wire Line
+	4350 6800 4500 6800
+Wire Wire Line
+	4500 6750 4500 6800
+Connection ~ 4500 6800
+Wire Wire Line
+	4500 6800 5700 6800
+Wire Wire Line
+	4500 6400 4500 6450
+Wire Wire Line
+	4350 6400 4350 6450
+Wire Wire Line
+	4200 6400 4200 6450
+Wire Wire Line
+	4050 6400 4050 6450
+Wire Wire Line
+	3900 6400 3900 6450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6044B1A6
+P 3050 5900
+AR Path="/6044B1A6" Ref="TP?"  Part="1" 
+AR Path="/604048C4/6044B1A6" Ref="TP10"  Part="1" 
+F 0 "TP10" V 2850 5950 50  0000 C CNN
+F 1 "TestPoint" V 2950 5950 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3250 5900 50  0001 C CNN
+F 3 "~" H 3250 5900 50  0001 C CNN
+	1    3050 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 5900 3250 5900
+Connection ~ 3250 5900
+Wire Wire Line
+	4800 3950 5000 3950
+Wire Wire Line
+	4800 2000 5000 2000
+Wire Wire Line
+	4800 5900 5000 5900
+Wire Wire Line
+	4800 5700 5000 5700
+$Comp
+L Device:C_Small C?
+U 1 1 6045E6C1
+P 5000 1900
+AR Path="/6045E6C1" Ref="C?"  Part="1" 
+AR Path="/604048C4/6045E6C1" Ref="C20"  Part="1" 
+F 0 "C20" H 4908 1854 50  0000 R CNN
+F 1 "100n" H 4908 1945 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5000 1900 50  0001 C CNN
+F 3 "~" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6045E6C7
+P 5400 1900
+AR Path="/6045E6C7" Ref="C?"  Part="1" 
+AR Path="/604048C4/6045E6C7" Ref="C21"  Part="1" 
+F 0 "C21" H 5308 1854 50  0000 R CNN
+F 1 "1u" H 5308 1945 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5400 1900 50  0001 C CNN
+F 3 "~" H 5400 1900 50  0001 C CNN
+	1    5400 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 604606A9
+P 5000 3850
+AR Path="/604606A9" Ref="C?"  Part="1" 
+AR Path="/604048C4/604606A9" Ref="C22"  Part="1" 
+F 0 "C22" H 4908 3804 50  0000 R CNN
+F 1 "100n" H 4908 3895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5000 3850 50  0001 C CNN
+F 3 "~" H 5000 3850 50  0001 C CNN
+	1    5000 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 604606AF
+P 5400 3850
+AR Path="/604606AF" Ref="C?"  Part="1" 
+AR Path="/604048C4/604606AF" Ref="C23"  Part="1" 
+F 0 "C23" H 5308 3804 50  0000 R CNN
+F 1 "1u" H 5308 3895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5400 3850 50  0001 C CNN
+F 3 "~" H 5400 3850 50  0001 C CNN
+	1    5400 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6046291F
+P 5000 5800
+AR Path="/6046291F" Ref="C?"  Part="1" 
+AR Path="/604048C4/6046291F" Ref="C24"  Part="1" 
+F 0 "C24" H 4908 5754 50  0000 R CNN
+F 1 "100n" H 4908 5845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5000 5800 50  0001 C CNN
+F 3 "~" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60462925
+P 5400 5800
+AR Path="/60462925" Ref="C?"  Part="1" 
+AR Path="/604048C4/60462925" Ref="C25"  Part="1" 
+F 0 "C25" H 5308 5754 50  0000 R CNN
+F 1 "1u" H 5308 5845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5400 5800 50  0001 C CNN
+F 3 "~" H 5400 5800 50  0001 C CNN
+	1    5400 5800
+	-1   0    0    1   
+$EndComp
+Connection ~ 5000 5700
+Wire Wire Line
+	5000 5700 5400 5700
+Connection ~ 5400 5700
+Wire Wire Line
+	5400 5700 5700 5700
+Wire Wire Line
+	5400 5900 5000 5900
+Connection ~ 5400 5900
+Connection ~ 5000 5900
+Wire Wire Line
+	5000 3950 5400 3950
+Connection ~ 5000 3950
+Connection ~ 5400 3950
+Wire Wire Line
+	4800 3750 5000 3750
+Connection ~ 5000 3750
+Wire Wire Line
+	5000 3750 5400 3750
+Connection ~ 5400 3750
+Wire Wire Line
+	5400 3750 5700 3750
+Wire Wire Line
+	5000 2000 5400 2000
+Connection ~ 5000 2000
+Connection ~ 5400 2000
+Wire Wire Line
+	4800 1800 5000 1800
+Connection ~ 5400 1800
+Wire Wire Line
+	5400 1800 5700 1800
+Connection ~ 5000 1800
+Wire Wire Line
+	5000 1800 5400 1800
+$EndSCHEMATC
